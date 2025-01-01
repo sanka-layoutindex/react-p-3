@@ -1,0 +1,111 @@
+.section-c{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    background-image: url(../../assets/images/section_c_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include responsiveToUp(lg) {
+        background-image: url(../../assets/images/section_c_background_mobile.png);
+        min-height: 34.25rem;
+
+    }
+
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+
+        @include responsiveToUp(lg) {
+            grid-template-columns: 1fr;
+
+          }
+
+        .left{
+            color: $white1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 6.375rem;
+
+            @include responsiveToUp(lg) {
+                text-align: center;
+                min-height: 34.25rem;
+            }
+
+            .titleWrapper{
+
+                h5{
+                    @include fontNeueHaasDisplay;
+                    color: $grey2;
+                    font-size: #{$font24}rem ;
+                }
+                
+                h2{
+                    @include fontCampaign;
+                    line-height: 3rem;
+
+                    @include responsiveToUp(lg){
+                        padding: 0 15rem;
+                    }
+                }
+            }
+
+            .textWrapper{
+
+                h6{
+                    @include fontNeueHaasDisplay;   
+                }
+                
+                p{
+                    font-size: #{$font10}rem;
+                }
+            }
+       
+        }
+
+        .right{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            @include responsiveToUp(lg){
+                align-items: center
+            }
+
+            .card{
+                @include fontNeueHaasDisplay;
+                text-align: center;
+                gap: 0.5rem;
+                border-radius: 2rem;
+                padding: 2rem 3.75rem 1.5rem 3.75rem;
+                line-height: 1;
+                font-weight: 700;
+
+                @include responsiveToUp(lg) {
+                    position: absolute;
+                    bottom: 25%;
+                }
+
+                .price{
+                    font-size: #{$font90}rem ; 
+                    color: $blue1;
+                    
+                }
+
+                .title{
+                    font-size: #{$font24}rem ; 
+                    color: $blue1;
+                }
+
+                .description{
+                    color: $primaryColor;
+                    font-size: #{$font14}rem ;
+                    text-decoration: underline;
+                }
+
+            }
+        }
+
+    }
+}

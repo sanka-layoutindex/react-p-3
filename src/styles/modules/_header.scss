@@ -1,0 +1,72 @@
+.header{
+    height: 50rem;
+    background-image: url(../../assets/images/headerImg1.png);
+    background-size: cover;
+    position: relative;
+
+    @include responsiveToUp(lg) {
+        background-image: url(../../assets/images/homeBackground-mobile.png);
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        background-image: url(../../assets/images/linearGradiant2.png);
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+
+    &::after{
+        content: "";
+        position: absolute;
+        background-image: url(../../assets/images/linearGradiant.png);
+        height: 100%;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .containerLarge{
+        position: relative;
+    }
+
+    .heading{
+        position: absolute;
+        left: 0;
+        top: 16rem;
+        z-index: 2;
+
+        h1{
+            color: $white1;
+
+            @include responsiveToUp(md) {
+                max-width: 65%;
+            }
+
+            br{
+                @include responsiveToUp(md) {
+                    display: none;
+                }
+            }
+      
+        }
+    }
+
+    .foam{
+        position: absolute;
+        z-index: 2;
+        top: 30rem;
+        left: 0;
+        right: 0;
+    }
+}
+

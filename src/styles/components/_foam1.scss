@@ -1,0 +1,41 @@
+.foam1{
+
+    .MuiTabs-flexContainer{
+
+        button{
+            @include fontNeueHaasDisplayBold;
+            color: $white1;
+            text-transform: inherit;
+            font-size: #{$font21}rem;
+
+            @include responsiveToUp(lg) {
+                font-size: #{$font16}rem;
+            }
+         
+        }
+    
+    }
+    
+    .MuiTabs-flexContainer{
+        gap: 3.125rem !important;
+    }
+    
+    .MuiButtonBase-root{
+        padding: 0 !important;
+        color: $white1 !important;
+        opacity: 0.5 !important;
+    }
+    
+    .Mui-selected{
+        opacity: 1 !important;
+    }
+    
+    .MuiTabs-indicator{
+        background-color: $brown1 !important;
+        border-radius: 1rem !important;
+        height: 4px !important;
+        width: 4.875rem !important;
+    }
+    
+
+}

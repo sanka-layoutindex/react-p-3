@@ -1,0 +1,50 @@
+.section-b {
+  padding-top: 6.875rem;
+  padding-bottom: 9rem;
+
+  @include responsiveToUp(lg) {
+    padding-top: 2.5rem;
+    padding-bottom: 4.375rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .swiper-slide-active {
+    position: relative;
+    top: 3rem;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+
+    @include responsiveToUp(lg) {
+      text-align: center;
+      grid-template-columns: 1fr;
+    }
+
+    .heading {
+
+      @include responsiveToUp(lg) {
+        padding-bottom: 2.6rem;
+      }
+
+      .titleWrapper {
+        margin-bottom: 1.5rem;
+
+        h2 {
+          line-height: 3rem;
+          color: $black2;
+
+          br{
+            @include responsiveToUp(lg) {
+              display: none;
+            }
+          }
+
+      
+        }
+      }
+    }
+  }
+}

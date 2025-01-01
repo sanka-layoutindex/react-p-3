@@ -1,0 +1,15 @@
+.contactPage{
+    background-image: url(../../assets/images/blue-background.png);
+    background-size: 100% 65.5rem;
+    background-repeat: no-repeat;
+
+    .nav-button-two a{
+        color: $white1;
+        border-color: $white1;
+
+        &hover{
+            background-color: $blue1 !important;
+            
+        }
+    }
+}

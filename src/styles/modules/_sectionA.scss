@@ -1,0 +1,25 @@
+.section-a{
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    @include responsiveToUp(lg) {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .titleWrapper{
+        padding-bottom: 5rem;
+
+        @include responsiveToUp(lg) {
+            padding-bottom: 2.5rem;
+        }
+
+        h2{
+            line-height: 3rem;
+            color: $black2;
+            
+        }
+    }
+
+}

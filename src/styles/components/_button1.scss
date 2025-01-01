@@ -1,0 +1,17 @@
+.nav-button{
+
+a{
+    @include fontNeueHaasDisplayBold;
+    color: $white1 ;
+    border: 2px solid $white1;
+    border-radius: 1.875rem;
+    padding: 0.75rem 1.5rem !important;
+    transition: 0.5s ease-in-out;
+
+    &:hover{
+        background-color: $primaryColor;
+        border: 2px solid $primaryColor;
+    }
+}
+   
+}

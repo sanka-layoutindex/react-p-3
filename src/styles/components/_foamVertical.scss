@@ -1,0 +1,98 @@
+.foamVertical{
+    max-width: 25rem;
+    box-shadow: rgba(79, 83, 157, 0.16) 0px 6px 18px 0px;
+    border-radius: 2rem;
+    padding: 2.1rem 2rem ;
+    @include fontNeueHaasDisplay;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    input, .MuiInputBase-root{
+        max-height: 3rem !important;
+        min-height: 3rem !important;
+        padding: 0 0.5rem !important;
+        border-radius: 12px !important;
+        color: $blue1 !important;
+        @include fontNeueHaasDisplayMedium;
+        font-size: #{$font14}rem !important;
+      
+    }
+
+    .titleWrapper{
+       
+
+        h3{
+            font-size: #{$font24}rem;
+            color: $secondaryColor;
+        }
+
+        p{
+            @include fontNeueHaasDisplayMedium;
+            font-size: #{$font14}rem;
+            margin-bottom: 0.5rem !important;
+        }
+    }
+
+    .product{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .icon-box{
+            @include fontNeueHaasDisplayMedium;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+            color: $blue1;
+            font-size: #{$font14}rem ;
+        }
+    
+        .counter{
+            @include fontNeueHaasDisplayMedium;
+            color: $blue1;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+    
+            p{
+                font-size: #{$font30}rem ;
+            }
+    
+            button{
+                border: none;
+                background-color: unset;
+                border: 1.5px solid $blue1;
+                border-radius: 2rem;
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+
+    }
+
+    .time{
+
+        .time-titles{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .MuiFormControl-root{
+            min-width: unset;
+        }
+
+        .MuiOutlinedInput-root{
+           flex-direction: row-reverse;
+        }
+    }
+
+    .date{
+        .MuiOutlinedInput-root{
+            flex-direction: row-reverse;
+         }
+
+    }
+
+}

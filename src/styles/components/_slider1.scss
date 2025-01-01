@@ -1,0 +1,92 @@
+.slider1{
+    .card{
+        border: none;
+        position: relative;
+        border-radius: 2rem;
+        color: $white1;
+
+        img{
+            border-radius: 2rem; 
+        }
+
+        .label{
+            background-color: $orange1;
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            padding: 0.5rem 1rem !important;
+            border-radius: 2rem;
+        }
+
+        .card-body{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            h3{
+              
+                font-size: #{$font24}rem;
+            }
+
+
+            p{
+                @include fontNeueHaasDisplay;
+            }
+
+
+        }
+    }
+
+
+}
+
+.swiper-button-prev{
+    width: 50px;
+    height: 50px;
+    background-color: $white1;
+    border-radius: 50px;
+    left: 5.5%;
+}
+
+.swiper-button-prev:after{
+    font-family: unset !important;
+    content: "";
+    background-image: url(../../assets/images/Arrow-Right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.swiper-button-next{
+    width: 50px;
+    height: 50px;
+    background-color: $white1;
+    border-radius: 50px;
+    right: 5.5%;
+}
+
+.swiper-button-next:after{
+    font-family: unset !important;
+    content: "";
+    background-image: url(../../assets/images/Arrow-Left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+   
+   }

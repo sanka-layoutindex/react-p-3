@@ -1,0 +1,189 @@
+.footer {
+  background-color: $grey3;
+  padding-top: 6rem;
+  @include fontNeueHaasDisplay;
+
+  
+  @include responsiveToUp(lg){
+    padding-top: 2.5rem;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+
+    @include responsiveToUp(lg){
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .imageWrapper{
+
+        @include responsiveToUp(lg){
+          margin-bottom: 2rem;
+        }
+      }
+
+      p {
+        font-size: #{$font14}rem;
+        line-height: 1.5rem;
+        color: $secondaryColor;
+        width: 80%;
+
+        @include responsiveToUp(lg){
+          display: none;
+        }
+      }
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      ul {
+        padding-left: 0;
+
+        li {
+          margin-bottom: 1.5rem;
+
+          a {
+            color: $blue1;
+
+            &:hover {
+              color: $black2;
+            }
+          }
+        }
+      }
+    }
+
+    .social {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      p {
+        color: $secondaryColor;
+      }
+
+      .email-input-container {
+        display: flex;
+        align-items: center;
+        background-color: $white1;
+        width: 100%;
+        border-radius: 2rem;
+        box-shadow: rgba(79, 83, 157, 0.16) 0px 6px 18px 0px;
+        height: 3rem;
+
+        .email-input {
+          border: none;
+          outline: none;
+          flex: 1;
+          border-radius: 2rem;
+          padding: 0 1rem;
+
+          &::placeholder{
+            color: $grey2;
+            font-size: #{$font14}rem;
+          }
+        }
+
+        .email-submit{
+            color: $white1;
+            background-color: $primaryColor;
+            border: none;
+            height: 2rem;
+            width: 2rem;
+            border-radius: 2rem;
+            margin-right: 0.5rem;
+            transition: 0.5s ease-in-out;
+
+            &:hover{
+                background-color: $black2;
+                transform: rotate(45deg);
+            }
+        }
+      }
+
+      .iconSection {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        @include responsiveToUp(lg){
+          flex-direction: column;
+        }
+
+        p {
+          font-size: #{$font14}rem;
+          color: $secondaryColor;
+        }
+
+        .iconBox {
+          display: flex;
+          gap: 1rem;
+          
+
+          .iconWrapper {
+            height: 2.125rem;
+            width: 2.125rem;
+            color: $primaryColor;
+            transition: 0.5s ease-in-out;
+            filter: drop-shadow(0px 6px 18px rgba(79, 83, 157, 0.16));
+
+            
+
+            &:hover {
+              color: $blue1;
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    margin-top: 5rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include responsiveToUp(lg){
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+
+    p{
+        font-size: #{$font10}rem;
+        color: $secondaryColor;
+    }
+
+    .nav3{
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 0;
+        margin-bottom: 0;
+        gap: 2rem;
+
+        a{
+            font-size: #{$font10}rem;
+            color: $secondaryColor;
+            text-transform: uppercase;
+
+            &:hover{
+                color: $blue1;
+            }
+        }
+    }
+  }
+}

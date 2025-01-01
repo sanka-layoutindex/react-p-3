@@ -1,0 +1,23 @@
+.listingSection{
+
+    .content{
+        display: grid;
+        grid-template-columns: 8fr 4fr;
+        gap: 4rem;
+        
+        padding-top: 2.5rem;
+        padding-bottom: 5.25rem;
+
+
+        .left{
+           
+            .listing-cards-container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2.5rem;
+            }
+        }
+
+
+    }
+}

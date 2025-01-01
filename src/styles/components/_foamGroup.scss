@@ -1,0 +1,80 @@
+.foam1{
+
+
+    .formGroup{
+        padding: 1.5rem;
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        justify-content: space-between;
+        background-color: $white1;
+    
+    }
+
+    .MuiBox-root{
+        padding: 1.5rem 0 0 0 !important;
+    }
+    .titleWrapper{
+        padding-bottom: 9px;
+    }
+
+    p{
+        @include fontNeueHaasDisplayMedium;
+        font-weight: 500;
+        color: $black2;
+        
+    }
+
+    input, .MuiInputBase-root{
+        max-height: 3rem !important;
+        min-height: 3rem !important;
+        padding: 0 0.5rem !important;
+        border-radius: 12px !important;
+        color: $blue1 !important;
+        @include fontNeueHaasDisplayMedium;
+        font-size: #{$font14}rem !important;
+
+      
+    }
+
+    .MuiInputBase-root{
+        min-width: 13.125rem;
+    }
+
+    .MuiStack-root{
+        padding-top: 0 !important;
+        scrollbar-gutter: stable;
+    }
+    
+    .icon-box{
+        @include fontNeueHaasDisplayMedium;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-weight: 500;
+        font-size: #{$font14}rem ;
+    }
+
+    .counter{
+        @include fontNeueHaasDisplayMedium;
+        color: $blue1;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        p{
+            font-size: #{$font30}rem ;
+        }
+
+        button{
+            border: none;
+            background-color: unset;
+            border: 1.5px solid $blue1;
+            border-radius: 2rem;
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+}

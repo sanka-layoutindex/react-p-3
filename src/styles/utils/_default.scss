@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Campaign";
+  src: url("../../assets/fonts/campaignsansserif.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NeueHaasDisplayBold";
+  src: url("../../assets/fonts/NeueHaasDisplayBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: "NeueHaasDisplay";
+  src: url("../../assets/fonts/NeueHaasDisplayRoman.ttf");
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: "NeueHaasDisplayMedium";
+  src: url("../../assets/fonts/NeueHaasDisplayMediu.ttf");
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+font
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html,
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  background-color: $secondaryColor;
+  font-size: #{$baseFontSize}px;
+
+}
+
+a,
+a:active,
+a:hover,
+a:focus {
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+ul {
+  margin: 0;
+  padding: 0 !important;
+
+  li {
+    list-style: none;
+  }
+}
+
+//text
+.textUpper {
+  text-transform: uppercase;
+}
+
+// border-bottom
+
+.line{
+  width: 100%;
+  border-bottom: 1px solid $blue1;
+  opacity: 0.15;
+  margin: 2rem 0;
+}

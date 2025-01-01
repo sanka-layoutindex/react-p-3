@@ -1,0 +1,102 @@
+.serviceSection{
+    @include fontNeueHaasDisplay;
+    overflow: visible !important;
+
+
+    .content{
+        display: grid;
+        grid-template-columns: 8fr 4fr;
+        gap: 4rem;
+        padding-top: 2.5rem;
+        padding-bottom: 5.25rem;
+
+        @include responsiveToUp(lg){
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .box{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding-bottom: 2.5rem;
+
+            @include responsiveToUp(lg){
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .number{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+              
+            }
+
+            p{
+                span{
+                    color: $primaryColor;
+                    margin-right: 5px !important;
+                }
+            }
+        }
+
+        .service{
+            
+            .titleWrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 2rem;
+
+                a{
+                    color: $primaryColor;
+
+                    &:hover{
+                        color: $secondaryColor;
+                    }
+                }
+            }
+
+            .service-list{
+                padding-left: 0;
+                display: flex;
+                gap: 1rem;
+
+                @include responsiveToUp(lg){
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                li{
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    padding: 0.5rem 0.75rem;
+
+                    .iconWrapper{
+                        height: 1.5rem;
+                        width:1.5rem ;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .containerLarge{
+        position: relative;
+        z-index: 1;
+    }
+
+
+    .foamVertical{
+        background-color: $white1;
+        position: relative;
+        top: -20%;
+        z-index: 10000 !important;
+        right: 0;
+    }
+}

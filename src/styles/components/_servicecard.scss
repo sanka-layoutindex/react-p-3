@@ -1,0 +1,95 @@
+.service-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  .service-card {
+    position: relative;
+    border: none;
+    color: $white1;
+
+
+    .imageWrapper{
+      position: relative;
+      height: 208px;
+      border-radius: 2rem;
+
+      @include responsiveToUp(md){
+        height: 260px;
+      }
+
+      img{
+        border-radius: 2rem;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        inset: 0;
+        object-fit: cover;
+      }
+    }
+
+    .service-card-content {
+      position: absolute;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1.75rem 2rem;
+
+      
+
+      @include responsiveToUp(md){
+        grid-template-columns: 1fr;
+        padding: 1.75rem 1rem;
+        text-align: center;
+        gap: 1rem;
+      }
+
+      .service-card-header {
+        h5 {
+          font-size: #{$font40}rem;
+        }
+      }
+
+      .service-card-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        text-align: right;
+
+        @include responsiveToUp(md){
+          align-items: center;
+          text-align: center;
+        }
+
+        .label-info {
+          display: flex;
+          flex-direction: column;
+
+          .service-card-price {
+            font-size: #{$font32}rem;
+          }
+        }
+
+        .service-card-button {
+          font-size: #{$font14}rem;
+          color: $white1;
+          background-color: $primaryColor;
+          border: 2px solid $primaryColor;
+          min-width: 15rem;
+          border-radius: 1.875rem;
+          padding: 0.75rem 1.5rem !important;
+          transition: 0.5s ease-in-out;
+
+          &:hover {
+            border: 2px solid $white1;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
