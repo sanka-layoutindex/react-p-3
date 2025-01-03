@@ -4,9 +4,9 @@ import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
 
-import lib from "../../assets/images/Lib.png";
-import lounge from "../../assets/images/Lounge.png";
-import meeting from "../../assets/images/meeting.png";
+import lib from "../../assets/images/Lib.webp";
+import lounge from "../../assets/images/Lounge.webp";
+import meeting from "../../assets/images/meeting.webp";
 
 function DesignSlider() {
   const slides = [
@@ -65,7 +65,7 @@ function DesignSlider() {
       breakpoints={{
         320: {
           slidesPerView: 1.5,
-          spaceBetween: 20,
+          spaceBetween: 10,
         },
         768: {
           slidesPerView: 2,

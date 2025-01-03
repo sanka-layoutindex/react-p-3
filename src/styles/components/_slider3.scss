@@ -6,19 +6,45 @@
         top: 0;
     }
 
+    .containerLarge{
+        position: relative;
+
+    }
+
     .carousel-item{
         img{
             width: 100%;
         }
     }
 
+    .carousel-img {
+
+        @include responsiveToUp(md){
+            height: 400px; 
+            object-fit: cover; 
+            width: 100%;
+
+        }
+
+      }
+      
+
     .carousel-control-next, .carousel-control-prev{
         display: none !important;
     }
 
     .carousel-caption {
-        left: 5.5%;
+        left: 0;
         text-align: left;
+
+        @include responsiveToUp(lg){
+            left: 1rem;
+        }
+
+        // @include responsiveToUp(md){
+        //     position: static;
+        //     color: $black2;
+        // }
 
         h1{
             

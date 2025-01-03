@@ -4,6 +4,8 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import FoamGroup from "./FoamGroup";
+import MobileFoam from "./MobileFoam";
+import ResponsiveComponentTwo from "../modules/ResponsiveComponentTwo";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -56,10 +58,10 @@ export default function BasicTabs() {
             </Tabs>
           </Box>
           <CustomTabPanel value={value} index={0}>
-            <FoamGroup></FoamGroup>
+            <ResponsiveComponentTwo></ResponsiveComponentTwo>
           </CustomTabPanel>
           <CustomTabPanel value={value} index={1}>
-          <FoamGroup></FoamGroup>
+          <ResponsiveComponentTwo></ResponsiveComponentTwo>
           </CustomTabPanel>
         </Box>
       </div>

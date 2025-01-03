@@ -14,7 +14,7 @@
       height: 208px;
       border-radius: 2rem;
 
-      @include responsiveToUp(md){
+      @include responsiveToUp(lg){
         height: 260px;
       }
 
@@ -40,7 +40,7 @@
 
       
 
-      @include responsiveToUp(md){
+      @include responsiveToUp(lg){
         grid-template-columns: 1fr;
         padding: 1.75rem 1rem;
         text-align: center;
@@ -60,7 +60,7 @@
         justify-content: space-between;
         text-align: right;
 
-        @include responsiveToUp(md){
+        @include responsiveToUp(lg){
           align-items: center;
           text-align: center;
         }

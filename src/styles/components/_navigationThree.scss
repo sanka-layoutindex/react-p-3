@@ -7,6 +7,16 @@
         padding-top: 1.25rem;
         padding-bottom: 1.25rem;
 
+        .navbar-toggler,
+        .navbar-toggler:focus {
+          border: none;
+          box-shadow: none;
+        }
+    
+        .navbar-toggler-icon {
+          filter: invert(100%);
+        }
+
         .navbar-nav{
             width: 100%;
             justify-content: flex-end;
@@ -49,4 +59,64 @@
      color: $white1 !important;
      border-color: $white1 !important;
     }
+}
+
+.offcanvas-body{
+    @include fontNeueHaasDisplay;
+
+    .navbar-nav {
+        @include responsiveToUp(lg) {
+          gap: 0.5rem;
+          
+        }
+
+        .nav-link{
+            @include responsiveToUp(lg){
+                border-bottom: 1px solid #dfdfe2;
+            }
+
+            @include responsiveToUp(lg){
+
+                &:hover{
+                    color: $primaryColor;
+                }
+            }
+
+        }
+
+      }
+    
+      .nav-button a{
+
+        @include responsiveToUp(lg){
+            @include fontNeueHaasDisplay;
+            color: black;
+            border: none;
+            display: block;
+            border-bottom: 1px solid #dfdfe2;
+            padding: 0 !important;
+            border-radius: 0 !important;
+           
+
+            &:hover{
+                background-color: transparent;
+                color: $primaryColor;
+            }
+        }
+        
+      }
+
+}
+
+.offcanvas-title {
+ 
+  .imageWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70px;
+    height: 50px;
+  }
+
+
 }

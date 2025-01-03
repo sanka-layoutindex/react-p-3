@@ -1,6 +1,6 @@
 .header{
     height: 50rem;
-    background-image: url(../../assets/images/headerImg1.png);
+    background-image: url(../../assets/images/headerImg1.webp);
     background-size: cover;
     position: relative;
 
@@ -11,7 +11,7 @@
     &::before{
         content: "";
         position: absolute;
-        background-image: url(../../assets/images/linearGradiant2.png);
+        background-image: url(../../assets/images/linearGradiant2.webp);
         background-repeat: no-repeat;
         height: 100%;
         width: 100%;
@@ -25,7 +25,7 @@
     &::after{
         content: "";
         position: absolute;
-        background-image: url(../../assets/images/linearGradiant.png);
+        background-image: url(../../assets/images/linearGradiant.webp);
         height: 100%;
         width: 100%;
         left: 0;
@@ -67,6 +67,11 @@
         top: 30rem;
         left: 0;
         right: 0;
+
+        @include responsiveToUp(lg){
+            top: 34rem;
+        }
+
     }
 }
 

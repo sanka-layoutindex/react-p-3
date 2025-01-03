@@ -1,6 +1,10 @@
 .section-b {
+  background-image: url(../../assets/images/grey_background.webp);
+  background-position: bottom;
+  background-size: 100% 100%;
   padding-top: 6.875rem;
-  padding-bottom: 9rem;
+  padding-bottom: 9.06rem;
+
 
   @include responsiveToUp(lg) {
     padding-top: 2.5rem;
@@ -9,9 +13,26 @@
     padding-right: 0;
   }
 
+  @include responsiveToUp(md) {
+    padding-bottom: 1.375rem;
+
+  }
+
+  .swiper-slide-prev,  .swiper-slide-next{
+
+    @include responsiveToUp(lg){
+      transform: scale(0.8);
+    }
+  }
+
   .swiper-slide-active {
     position: relative;
     top: 3rem;
+
+    @include responsiveToUp(lg) {
+      top: 0;
+      transform: scaleX(1.1);
+    }
   }
 
   .content {
@@ -26,7 +47,7 @@
     .heading {
 
       @include responsiveToUp(lg) {
-        padding-bottom: 2.6rem;
+        padding-bottom: 4.6rem;
       }
 
       .titleWrapper {

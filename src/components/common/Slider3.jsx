@@ -28,7 +28,8 @@ function Slider3() {
     <Carousel>
         {slides.map((slide) => (
           <Carousel.Item key={slide.id}>
-            <img src={slide.image} alt={slide.title} />
+            <img className="carousel-img" src={slide.image} alt={slide.title} />
+            <div className="containerLarge">
             <Carousel.Caption>
               <h1>{slide.title}</h1>
               <div className="location">
@@ -38,6 +39,7 @@ function Slider3() {
                 <p>{slide.address}</p>
               </div>
             </Carousel.Caption>
+            </div>
           </Carousel.Item>
         ))}
       </Carousel>

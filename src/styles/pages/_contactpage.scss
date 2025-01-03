@@ -3,6 +3,10 @@
     background-size: 100% 65.5rem;
     background-repeat: no-repeat;
 
+    @include responsiveToUp(md){
+        background-size: cover;
+    }
+
     .nav-button-two a{
         color: $white1;
         border-color: $white1;

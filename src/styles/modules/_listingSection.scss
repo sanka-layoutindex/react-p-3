@@ -1,13 +1,28 @@
 .listingSection{
+    padding-top: 1rem;
+    padding-bottom: 9rem;
+
+    
+    .MaintitleWrapper{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 
     .content{
         display: grid;
         grid-template-columns: 8fr 4fr;
         gap: 4rem;
-        
-        padding-top: 2.5rem;
-        padding-bottom: 5.25rem;
+ 
 
+        @include responsiveToUp(lg){
+            grid-template-columns: 7fr 5fr;
+            gap: 2rem;
+        }
+
+        @include responsiveToUp(md){
+            display: flex;
+            flex-direction: column-reverse;
+        }
 
         .left{
            
@@ -15,9 +30,15 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 gap: 2.5rem;
+
+                @include responsiveToUp(lg){
+                    grid-template-columns: 1fr;
+                }
             }
         }
 
 
     }
+
+
 }

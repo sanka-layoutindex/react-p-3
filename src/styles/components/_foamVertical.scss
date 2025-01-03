@@ -8,6 +8,10 @@
     flex-direction: column;
     gap: 1.5rem;
 
+    @include responsiveToUp(lg){
+        padding: 2.1rem 1rem ;
+    }
+
     input, .MuiInputBase-root{
         max-height: 3rem !important;
         min-height: 3rem !important;
@@ -81,10 +85,22 @@
 
         .MuiFormControl-root{
             min-width: unset;
+            margin-top: 0;
         }
 
         .MuiOutlinedInput-root{
            flex-direction: row-reverse;
+           
+        }
+
+  
+        .MuiStack-root{
+
+            @include responsiveToUp(xl){
+                flex-direction: row;
+                gap: 0.5rem;
+            }
+            
         }
     }
 

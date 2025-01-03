@@ -1,5 +1,6 @@
 import React from 'react'
-import CardSlider from '../common/Slider1'
+import ResponsiveComponent from './ResponsiveComponent'
+// import CardSlider from '../common/Slider1'
 
 
 function SectionA() {
@@ -9,7 +10,8 @@ function SectionA() {
             <div className="titleWrapper">
                 <h2 className='fw500'>Découvrez nos différents <br /> établissements</h2>
             </div>
-            <CardSlider></CardSlider>
+            {/* <CardSlider></CardSlider> */}
+            <ResponsiveComponent></ResponsiveComponent>
         </div>
   
     </>

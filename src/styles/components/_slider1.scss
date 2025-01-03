@@ -34,6 +34,11 @@
                 font-size: #{$font24}rem;
             }
 
+            .icons{
+                display: flex;
+               gap: 0.625rem;
+            }
+
 
             p{
                 @include fontNeueHaasDisplay;

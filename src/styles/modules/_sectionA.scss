@@ -4,9 +4,27 @@
     padding-bottom: 5rem;
 
     @include responsiveToUp(lg) {
-        padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
+        padding: 2.5rem 1rem;
     }
+
+    @include responsiveToUp(md) {
+        padding: 2.5rem 1rem 1rem 1rem;
+    }
+
+    .listing-cards-container{
+
+
+        @include responsiveToUp(lg) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+    
+        @include responsiveToUp(md) {
+            grid-template-columns: 1fr;
+        }
+    }
+
 
     .titleWrapper{
         padding-bottom: 5rem;
@@ -21,5 +39,16 @@
             
         }
     }
+
+    .slider1{
+
+        .card{
+            @include responsiveToUp(lg){
+                // margin-bottom: 1.5rem;
+            }
+        }
+
+    }
+
 
 }

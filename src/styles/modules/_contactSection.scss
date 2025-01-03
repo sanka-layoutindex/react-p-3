@@ -3,6 +3,11 @@
     .content{
         padding: 5rem 6.5rem 7.5rem 6.5rem;
 
+        @include responsiveToUp(lg){
+            padding: 1rem 0;
+            text-align: center
+        }
+
         p{
             @include fontNeueHaasDisplay;
             font-size: #{$font14}rem ; 
@@ -33,10 +38,20 @@
             grid-template-columns: 1fr 1fr;
             gap: 2.5rem;
             padding-bottom: 7.5rem;
+
+            @include responsiveToUp(lg){
+                grid-template-columns: 1fr;
+                padding-bottom: 3rem;
+            }
             
             .titleWrapper{
                 margin-top: 2.5rem;
                 margin-bottom: 2.5rem;
+
+                @include responsiveToUp(lg){
+                    margin-top: 1.5rem;
+                    margin-bottom: 1.5rem;
+                }
             }
 
          
@@ -49,12 +64,23 @@
             padding-right: 6.75rem;
             color: $secondaryColor;
 
+            @include responsiveToUp(lg){
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
             .boxTwo{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 gap: 2.5rem;
                 padding-top: 5.8rem;
                 padding-bottom: 1.68rem;
+
+                @include responsiveToUp(lg){
+                    padding-top: 1rem;
+                    grid-template-columns: 1fr;
+                    gap: 1rem;
+                }
 
                 .titleWrapper{
                     margin-top: 1.25rem;
@@ -68,6 +94,13 @@
                 gap: 6.875rem;
                 padding-top: 3.75rem;
                 padding-bottom: 3.75rem;
+
+                @include responsiveToUp(lg){
+                    grid-template-columns: 1fr;
+                    gap: 1rem;
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                }
 
                 .titleWrapper{
                     margin-top: 1.25rem;
