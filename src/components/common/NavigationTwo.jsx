@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
@@ -8,10 +8,24 @@ import logoblue from "../../assets/images/logo2.png";
 import Button3 from "./Button3";
 
 function NavigationTwo() {
+
+  const [scrolled, setScrolled] = useState(false);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        setScrolled(window.scrollY > 50);
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+
   return (
     <div className="paddingGlobal">
       <div className="containerLarge">
-        <div className="navigationTwo">
+        <div className="navigationTwo " >
           <Navbar expand="lg" className="">
             <Navbar.Brand>
               <Link to="/">

@@ -24,6 +24,14 @@
       width: 65%;
     }
 
+    &.scrolled {
+
+      @include responsiveToUp(md){
+        width: auto;
+      }
+
+    }
+
     .navbar-toggler,
     .navbar-toggler:focus {
       border: none;

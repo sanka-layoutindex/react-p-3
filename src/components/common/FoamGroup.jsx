@@ -114,8 +114,8 @@ function FoamGroup() {
               ),
             }}
           >
-            <MenuItem value="À la journée">À la journée</MenuItem>
-            <MenuItem value="À l'heure">À l'heure</MenuItem>
+            <MenuItem aria-label="À la journée" value="À la journée">À la journée</MenuItem>
+            <MenuItem aria-label="À l'heure" value="À l'heure">À l'heure</MenuItem>
           </TextField>
         </div>
         <div className="icon-box">
@@ -142,7 +142,7 @@ function FoamGroup() {
           <p>{count}</p>
           <button onClick={increment}>+</button>
         </div>
-        <Button2 btnname="Rechercher" link="/Rechercher" />
+        <Button2 btnname="Rechercher" to="/Rechercher" />
       </div>
     </>
   );

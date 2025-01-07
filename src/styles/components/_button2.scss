@@ -1,12 +1,12 @@
-.blue-button{
 
-    a{
+.btnBlue{
         @include fontNeueHaasDisplayBold;
         color: $white1 !important;
         background-color: $primaryColor;
         font-size: #{$font14}rem ;
         border-radius: 1.875rem;
         padding: 1rem 2.5rem !important;
+        display: inline-block;
         transition: 0.5s ease-in-out;
     
         &:hover{
@@ -15,4 +15,3 @@
         }
     }
        
-    }

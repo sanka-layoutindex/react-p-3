@@ -5,17 +5,21 @@ import Navigation from "../common/Navigation";
 function HeaderSection() {
   return (
     <>
-      <div className="paddingGlobal header">
+      <div
+        className="paddingGlobal header"
+        itemscope
+        itemtype="https://schema.org/WebPage"
+      >
         <div className="containerLarge">
-          <Navigation/>
-          <div className="heading">
+          <Navigation />
+          <div className="heading" itemprop="headline">
             <h1>
               Votre espace de travail, <br />
               la convivialité en plus.
             </h1>
           </div>
-          <div className="foam">
-            <CustomTabs></CustomTabs>
+          <div className="foam" itemscope itemtype="https://schema.org/Service">
+            <CustomTabs />
           </div>
         </div>
       </div>

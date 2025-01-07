@@ -49,7 +49,7 @@
             }
         }
 
-        .service{
+        .serviceDetailSection{
             
             .titleWrapper {
                 display: flex;
@@ -87,6 +87,12 @@
                         width:1.5rem ;
                     }
                 }
+            }
+        }
+
+        .serviceCardSection{
+            .titleWrapper {
+                margin-bottom: 2rem;
             }
         }
 

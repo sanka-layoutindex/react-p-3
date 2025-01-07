@@ -1,6 +1,4 @@
-.nav-button{
-
-a{
+.btnWhiteBorder{
     @include fontNeueHaasDisplayBold;
     color: $white1 ;
     border: 2px solid $white1;
@@ -12,6 +10,6 @@ a{
         background-color: $primaryColor;
         border: 2px solid $primaryColor;
     }
-}
+
    
 }

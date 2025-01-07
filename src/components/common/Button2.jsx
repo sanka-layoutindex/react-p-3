@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
 function Button2(props) {
   return (
-    <div className="blue-button">
-    <a href={props.to} title="Click to visit">
-      {props.btnname}
-    </a>
-  </div>
-  )
+    <div>
+      <a href={props.to} title="Click to visit" className="btnBlue">
+        {props.btnname}
+      </a>
+    </div>
+  );
 }
 
-export default Button2
+export default Button2;

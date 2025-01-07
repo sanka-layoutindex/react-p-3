@@ -10,43 +10,45 @@ function ServiceSection() {
         <div className="containerLarge">
           <div className="content">
             <div className="left">
-              <div className="box">
-                <div className="number">
-                  <div className="iconWrapper">
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 18 18"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M15.4948 12.0537L14.0022 10.5582C13.6812 10.2361 13.2455 10.0551 12.7911 10.0551C12.3368 10.0551 11.9011 10.2361 11.5801 10.5582L11.2757 10.863C9.77567 9.60418 8.39006 8.21459 7.13518 6.71054L7.43954 6.40571C8.10684 5.73541 8.10684 4.65073 7.43954 3.98044L5.94391 2.48675C5.26562 1.83775 4.19766 1.83775 3.51937 2.48675L2.70368 3.30737C1.8958 4.12233 1.76879 5.39285 2.39932 6.35206C4.83123 10.0222 7.97155 13.168 11.6355 15.6044C12.596 16.2298 13.8613 16.1031 14.6791 15.2996L15.4978 14.4789C15.8193 14.1577 16 13.7215 16 13.2666C16 12.8118 15.8193 12.3756 15.4978 12.0543L15.4948 12.0537Z"
-                        fill="#003768"
-                      />
-                    </svg>
+
+              <div className="contactDetailSection">
+                <div className="box">
+                  <div className="number">
+                    <div className="iconWrapper">
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.4948 12.0537L14.0022 10.5582C13.6812 10.2361 13.2455 10.0551 12.7911 10.0551C12.3368 10.0551 11.9011 10.2361 11.5801 10.5582L11.2757 10.863C9.77567 9.60418 8.39006 8.21459 7.13518 6.71054L7.43954 6.40571C8.10684 5.73541 8.10684 4.65073 7.43954 3.98044L5.94391 2.48675C5.26562 1.83775 4.19766 1.83775 3.51937 2.48675L2.70368 3.30737C1.8958 4.12233 1.76879 5.39285 2.39932 6.35206C4.83123 10.0222 7.97155 13.168 11.6355 15.6044C12.596 16.2298 13.8613 16.1031 14.6791 15.2996L15.4978 14.4789C15.8193 14.1577 16 13.7215 16 13.2666C16 12.8118 15.8193 12.3756 15.4978 12.0543L15.4948 12.0537Z"
+                          fill="#003768"
+                        />
+                      </svg>
+                    </div>
+                    <p className="fw700">
+                      <span>Téléphone </span> 01 26 12 34 41
+                    </p>
                   </div>
-                  <p className="fw700">
-                    <span>Téléphone </span> 01 26 12 34 41
-                  </p>
+                  <div className="address">
+                    <p className="fw700">
+                      <span>Horaires </span> Lundi au vendredi, 8:00 - 19:00
+                    </p>
+                  </div>
                 </div>
-                <div className="address">
-                  <p className="fw700">
-                    <span>Horaires </span> Lundi au vendredi, 8:00 - 19:00
-                  </p>
+                <div className="div">
+                  <ReadMoreSection></ReadMoreSection>
                 </div>
-              </div>
-              
-              <div className="div">
-                <ReadMoreSection></ReadMoreSection>
+                <div className="line"></div>
               </div>
 
-              <div className="line"></div>
-              <div className="service">
+              <div className="serviceDetailSection">
                 <div className="titleWrapper">
                   <h2 className="fw700">Services</h2>
                   <a className="fw700" href="/link">
-                    Voir tous les services{" "}
+                    Voir tous les services
                   </a>
                 </div>
                 <ul className="service-list">
@@ -181,16 +183,19 @@ function ServiceSection() {
                   </li>
                 </ul>
                 <div className="line"></div>
-                <div className="titleWrapper">
-                    <h2 className="fw700">3 espaces dans votre myWO</h2>
+              </div>
+
+              <div className="serviceCardSection">
+              <div className="titleWrapper">
+                  <h2 className="fw700">3 espaces dans votre myWO</h2>
                 </div>
                 <div className="service-cards">
-                   <ServiceCards></ServiceCards>
+                  <ServiceCards></ServiceCards>
                 </div>
-              </div> 
+              </div>
             </div>
             <div className="right">
-                <FoamVertical></FoamVertical>
+              <FoamVertical></FoamVertical>
             </div>
           </div>
         </div>

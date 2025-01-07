@@ -2,6 +2,9 @@
     padding-top: 1rem;
     padding-bottom: 9rem;
 
+    @include responsiveToUp(lg){
+        padding-bottom: 4rem;
+    }
     
     .MaintitleWrapper{
         padding-top: 2rem;

@@ -14,7 +14,7 @@ function SectionB() {
                   3 types <br /> d’espaces 
                 </h2>
               </div>
-              <Button2 btnname="En savoir plus" link="/EnSavoirPlus" />
+              <Button2 btnname="En savoir plus" to="/EnSavoirPlus" />
             </div>
             <div className="slider">
                 <DesignSlider></DesignSlider>

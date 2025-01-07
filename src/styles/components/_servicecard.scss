@@ -8,6 +8,36 @@
     border: none;
     color: $white1;
 
+    &::after{
+      z-index: 1;
+      content: "";
+      position: absolute;
+      border-radius: 2rem;
+      background: linear-gradient(90deg, rgba(90,151,255,0.09007352941176472) 0%, rgba(0,0,0,1) 100%);
+      opacity: 44%;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    &::before{
+      z-index: 1;
+      content: "";
+      position: absolute;
+      border-radius: 2rem;
+      background: linear-gradient(260deg, rgba(90,151,255,0.09007352941176472) 0%, rgba(0,0,0,1) 100%);
+      opacity: 44%;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+
 
     .imageWrapper{
       position: relative;
@@ -30,6 +60,7 @@
 
     .service-card-content {
       position: absolute;
+      z-index: 2;
       display: grid;
       grid-template-columns: 1fr 1fr;
       top: 0;

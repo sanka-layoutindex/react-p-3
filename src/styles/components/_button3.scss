@@ -1,6 +1,4 @@
-.nav-button-two{
-
-a{
+.btnBlueTwo{
     @include fontNeueHaasDisplayBold;
     color: $blue1 ;
     border: 2px solid $blue1;
@@ -15,4 +13,3 @@ a{
     }
 }
    
-}

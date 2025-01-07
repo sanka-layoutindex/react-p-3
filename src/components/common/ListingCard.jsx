@@ -1,7 +1,7 @@
 import React from "react";
-import card1 from "../../assets/images/card1.webp";
-import card2 from "../../assets/images/card2.webp";
-import card3 from "../../assets/images/card3.webp";
+import card1 from "../../assets/images/card1.png";
+import card2 from "../../assets/images/card2.png";
+import card3 from "../../assets/images/card3.png";
 import icon1 from "../../assets/images/icon1.png";
 import icon2 from "../../assets/images/icon2.png";
 import icon3 from "../../assets/images/icon3.png";
@@ -53,7 +53,8 @@ const ListingCards = () => {
         <div className="slider1" key={index}>
           <div className="card">
             {card.label && <span className="label">{card.label}</span>}
-            <img className="img-fluid" src={card.image} alt={card.title} />
+            <div className="ratioImageWrapper"></div>
+            <img className="img-fluid topImage" src={card.image} alt={card.title} />
             <div className="card-body">
               <h3>{card.title}</h3>
               <div className="icons">

@@ -1,114 +1,107 @@
-.foamVertical{
-    max-width: 25rem;
-    box-shadow: rgba(79, 83, 157, 0.16) 0px 6px 18px 0px;
-    border-radius: 2rem;
-    padding: 2.1rem 2rem ;
-    @include fontNeueHaasDisplay;
+.foamVertical {
+  // max-width: 25rem;
+  box-shadow: rgba(79, 83, 157, 0.16) 0px 6px 18px 0px;
+  border-radius: 2rem;
+  padding: 2.1rem 2rem;
+  @include fontNeueHaasDisplay;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  @include responsiveToUp(lg) {
+    padding: 2.1rem 1rem;
+  }
+
+  input,
+  .MuiInputBase-root {
+    max-height: 3rem !important;
+    min-height: 3rem !important;
+    padding: 0 0.5rem !important;
+    border-radius: 12px !important;
+    color: $blue1 !important;
+    @include fontNeueHaasDisplayMedium;
+    font-size: #{$font14}rem !important;
+  }
+
+  .titleWrapper {
+    h3 {
+      font-size: #{$font24}rem;
+      color: $secondaryColor;
+    }
+
+    p {
+      @include fontNeueHaasDisplayMedium;
+      font-size: #{$font14}rem;
+      margin-bottom: 0.5rem !important;
+    }
+  }
+
+  .product {
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
 
-    @include responsiveToUp(lg){
-        padding: 2.1rem 1rem ;
+    .icon-box {
+      @include fontNeueHaasDisplayMedium;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 500;
+      color: $blue1;
+      font-size: #{$font14}rem;
     }
 
-    input, .MuiInputBase-root{
-        max-height: 3rem !important;
-        min-height: 3rem !important;
-        padding: 0 0.5rem !important;
-        border-radius: 12px !important;
-        color: $blue1 !important;
-        @include fontNeueHaasDisplayMedium;
-        font-size: #{$font14}rem !important;
-      
+    .counter {
+      @include fontNeueHaasDisplayMedium;
+      color: $blue1;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      p {
+        font-size: #{$font30}rem;
+      }
+
+      button {
+        border: none;
+        background-color: unset;
+        border: 1.5px solid $blue1;
+        border-radius: 2rem;
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+
+  .time {
+    .time-titles {
+      display: grid;
+      gap: 0.5rem;
+      grid-template-columns: 1fr 1fr;
     }
 
-    .titleWrapper{
-       
-
-        h3{
-            font-size: #{$font24}rem;
-            color: $secondaryColor;
-        }
-
-        p{
-            @include fontNeueHaasDisplayMedium;
-            font-size: #{$font14}rem;
-            margin-bottom: 0.5rem !important;
-        }
+    .MuiFormControl-root {
+      min-width: unset !important;
+      width: 100%;
+      margin-top: 0;
+      margin-left: 0;
     }
 
-    .product{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        .icon-box{
-            @include fontNeueHaasDisplayMedium;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-weight: 500;
-            color: $blue1;
-            font-size: #{$font14}rem ;
-        }
-    
-        .counter{
-            @include fontNeueHaasDisplayMedium;
-            color: $blue1;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-    
-            p{
-                font-size: #{$font30}rem ;
-            }
-    
-            button{
-                border: none;
-                background-color: unset;
-                border: 1.5px solid $blue1;
-                border-radius: 2rem;
-                width: 2rem;
-                height: 2rem;
-            }
-        }
-
+    .MuiOutlinedInput-root {
+      flex-direction: row-reverse;
     }
 
-    .time{
-
-        .time-titles{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-
-        .MuiFormControl-root{
-            min-width: unset;
-            margin-top: 0;
-        }
-
-        .MuiOutlinedInput-root{
-           flex-direction: row-reverse;
-           
-        }
-
-  
-        .MuiStack-root{
-
-            @include responsiveToUp(xl){
-                flex-direction: row;
-                gap: 0.5rem;
-            }
-            
-        }
-    }
-
-    .date{
-        .MuiOutlinedInput-root{
-            flex-direction: row-reverse;
-         }
+    .MuiStack-root {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
 
     }
+  }
 
+  .date {
+    .MuiOutlinedInput-root {
+      flex-direction: row-reverse;
+    }
+  }
 }

@@ -4,9 +4,9 @@ import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
 
-import lib from "../../assets/images/Lib.webp";
-import lounge from "../../assets/images/Lounge.webp";
-import meeting from "../../assets/images/meeting.webp";
+import lib from "../../assets/images/Lib.png";
+import lounge from "../../assets/images/Lounge.png";
+import meeting from "../../assets/images/meeting.png";
 
 function DesignSlider() {
   const slides = [
@@ -14,7 +14,7 @@ function DesignSlider() {
       heading: "ESPACE",
       title: "Lib",
       image: lib,
-      description:(
+      description: (
         <>
           Co-working ouvert à tous. <br />
           Toute la journée. <br />
@@ -27,24 +27,23 @@ function DesignSlider() {
       heading: "ESPACE",
       title: "Lounge",
       image: lounge,
-      description:(
+      description: (
         <>
-        Co-working calme et isolé <br /> À l'heure / Demi-journée / Journée <br /> Payant et sur réservation.
+          Co-working calme et isolé <br /> À l'heure / Demi-journée / Journée{" "}
+          <br /> Payant et sur réservation.
         </>
-      )
-       ,
+      ),
     },
     {
       heading: "ESPACE",
       title: "Meeting",
       image: meeting,
-      description:
-      (
+      description: (
         <>
-        Espace privatif <br /> Demi-journée / Journée <br /> Payant et sur réservation.
+          Espace privatif <br /> Demi-journée / Journée <br /> Payant et sur
+          réservation.
         </>
-      )
-        
+      ),
     },
     {
       heading: "ESPACE",
@@ -85,16 +84,29 @@ function DesignSlider() {
     >
       {slides.map((slide, index) => (
         <SwiperSlide className="slider2" key={index}>
-          <div className="card">
-            <img src={slide.image} alt={slide.title} className="card-image" />
+          <div
+            className="card"
+            itemscope
+            itemtype="https://schema.org/Offer"
+          >
+            <img
+              src={slide.image}
+              alt={slide.title}
+              className="card-image"
+              itemprop="image"
+            />
             <div className="card-body">
               <div className="titleWrapper">
-                <h5>{slide.heading}</h5>
-                <h3 className="card-title">{slide.title}</h3>
+                <h5 itemprop="category">{slide.heading}</h5>
+                <h3 className="card-title" itemprop="name">
+                  {slide.title}
+                </h3>
               </div>
               <div className="textWrapper">
-                <p>{slide.description}</p>
-                <span>{slide.sub}</span>
+                <p itemprop="description">{slide.description}</p>
+                {slide.sub && (
+                  <span itemprop="additionalProperty">{slide.sub}</span>
+                )}
               </div>
             </div>
           </div>
